@@ -628,7 +628,7 @@ public class ConsultationCommandServiceImpl implements ConsultationCommandServic
 		 * System.out.println(
 		 * "----------------------------------------------------------"+siteName);
 		 */
-		String name = "document"+".pdf";
+		String name = "doc"+".pdf";
 		NodeBodyCreate nodeBodyCreate = new NodeBodyCreate();
 		nodeBodyCreate.setName(name);
 		nodeBodyCreate.setNodeType("cm:content");
