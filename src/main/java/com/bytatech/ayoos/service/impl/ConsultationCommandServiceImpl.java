@@ -127,6 +127,9 @@ public class ConsultationCommandServiceImpl implements ConsultationCommandServic
     @Autowired
     PrescriptionRepository prescriptionRepo;
     
+    
+    String siteName = null;
+    
     private static List<PrescriptionRequest> prescriptionRequestList = new ArrayList<PrescriptionRequest>();
     
 	public ConsultationCommandServiceImpl(ConsultationRepository consultationRepository,
