@@ -47,7 +47,7 @@ public class Consultation implements Serializable {
     @JoinColumn(unique = true)
     private ParamedicalExamination paramedicalExamination;
 
-    @OneToMany(mappedBy = "consultation")
+    @OneToMany(mappedBy = "consultation",cascade=CascadeType.ALL)
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Symptom> symptoms = new HashSet<>();
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
